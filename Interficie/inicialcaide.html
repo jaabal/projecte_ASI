@@ -14,42 +14,10 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <script type="text/javascript">
-     /* var canvas = document.getElementById("myCanvas0");
-      var canvas = document.getElementById("myCanvas1");
-      var canvas = document.getElementById("myCanvas2");
-      var canvas = document.getElementById("myCanvas3");
-      var canvas = document.getElementById("myCanvas4");
-      var canvas = document.getElementById("myCanvas5");
-      var canvas = document.getElementById("myCanvas6");
-      var canvas = document.getElementById("myCanvas7");
-      var canvas = document.getElementById("myCanvas8");
-      var canvas = document.getElementById("myCanvas9");
-      var canvas = document.getElementById("myCanvas10");
-      var canvas = document.getElementById("myCanvas11");
-      var canvas = document.getElementById("myCanvas12");
-      var canvas = document.getElementById("myCanvas13");
-      var canvas = document.getElementById("myCanvas14");
-      var canvas = document.getElementById("myCanvas15");
-      var canvas = document.getElementById("myCanvas16");
-      var canvas = document.getElementById("myCanvas17");
-      var canvas = document.getElementById("myCanvas18");
-      var canvas = document.getElementById("myCanvas19");
-      var canvas = document.getElementById("myCanvas20");
-      var canvas = document.getElementById("myCanvas21");
-      var canvas = document.getElementById("myCanvas22");
-      var canvas = document.getElementById("myCanvas23");
-      var canvas = document.getElementById("myCanvas24");
-      var canvas = document.getElementById("myCanvas25");
-      var canvas = document.getElementById("myCanvas26");
-      var canvas = document.getElementById("myCanvas27");
-      var canvas = document.getElementById("myCanvas28");
-      var canvas = document.getElementById("myCanvas29");
-      var canvas = document.getElementById("myCanvas30");
-      var celda = canvas.getContext("2d");*/
       function ss(x,i){
         var canvas = document.getElementById(x);
         var celda = canvas.getContext("2d");
-        celda.font="100px Arial";
+        celda.font="100px quicksand";
         celda.fillText(i,110,110);
         celda.textAlign="center";
       }
@@ -195,77 +163,83 @@
 
       <div class="row" style="padding-top:2%">
       <div class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
-        <div onclick="color();"">
-<canvas id="myCanvas0" class="puertacerrada"></canvas></div>
+        <div>
+<canvas id="myCanvas0" class="puertacerrada" onclick="gestioceldas('numcelda','numsector','dispositius',0)"></canvas></div>
       </div>
 <div class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
-<canvas id="myCanvas1" class="puertacerrada"></canvas>
+<canvas id="myCanvas1" class="puertacerrada" onclick="gestioceldas('numcelda','numsector','dispositius',1)"></canvas>
       </div>
       <div class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
-<canvas id="myCanvas2" class="puertacerrada"></canvas>
+<canvas id="myCanvas2" class="puertacerrada" onclick="gestioceldas('numcelda','numsector','dispositius',2)"></canvas>
       </div>
       <div class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
-<canvas id="myCanvas3" class="puertaabierta"></canvas>
+<canvas id="myCanvas3" class="puertaabierta" onclick="gestioceldas('numcelda','numsector','dispositius',3)"></canvas>
       </div>
       <div class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
-<canvas id="myCanvas4" class="puertacerrada"></canvas>
+<canvas id="myCanvas4" class="puertacerrada" onclick="gestioceldas('numcelda','numsector','dispositius',4)"></canvas>
       </div>
       <div class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
-<canvas id="myCanvas5" class="puertacerrada"></canvas>
+<canvas id="myCanvas5" class="puertacerrada" onclick="gestioceldas('numcelda','numsector','dispositius',5)"></canvas>
       </div>
       <div class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
-<canvas id="myCanvas6" class="canvass" style="border:1px solid #d3d3d3; width:50px;height:54px;background-color:grey;"></canvas>
+<canvas id="myCanvas6" class="puertacerrada" onclick="gestioceldas('numcelda','numsector','dispositius',6)"></canvas>
       </div>
       <div class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
-<canvas id="myCanvas7" class="canvass" style="border:1px solid #d3d3d3; width:50px;height:54px;background-color:grey;"></canvas>
+<canvas id="myCanvas7" class="puertaabierta"></canvas>
       </div>
       <div class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
-<canvas id="myCanvas8" class="canvass" style="border:1px solid #d3d3d3; width:50px;height:54px;background-color:grey;"></canvas>
+<canvas id="myCanvas8" class="puertaabierta"></canvas>
       </div>
       <div class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
-<canvas id="myCanvas9" class="canvass" style="border:1px solid #d3d3d3; width:50px;height:54px;background-color:grey;"></canvas>
+<canvas id="myCanvas9" class="puertaabierta"></canvas>
       </div>
       <div class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
-<canvas id="myCanvas10" class="canvass" style="border:1px solid #d3d3d3; width:50px;height:54px;background-color:grey;"></canvas>
+<canvas id="myCanvas10" class="puertacerrada"></canvas>
       </div>
       <div class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
-<canvas id="myCanvas11" class="canvass" style="border:1px solid #d3d3d3; width:50px;height:54px;background-color:grey;"></canvas>
+<canvas id="myCanvas11" class="puertaabierta"></canvas>
       </div>
   	</div>
 
 
   	<div class="row" style="padding-top:2%">
       <div class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
-<canvas id="myCanvas12" class="canvass" style="border:1px solid #d3d3d3; width:50px;height:54px;background-color:grey;"></canvas>
+<canvas id="myCanvas12" class="puertacerrada"></canvas>
       </div>
       <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-
+      <div id="numcelda">
+        dsddddddddddddddddddddddddddddd
+      </div>
       </div>
       <div class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
-<canvas id="myCanvas13" class="canvass" style="border:1px solid #d3d3d3; width:50px;height:54px;background-color:grey;"></canvas>
+<canvas id="myCanvas13" class="puertacerrada"></canvas>
       </div>
     </div>
 
     <div class="row" style="padding-top:2%">
       <div class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
-<canvas id="myCanvas14" class="canvass" style="border:1px solid #d3d3d3; width:50px;height:54px;background-color:grey;"></canvas>
+<canvas id="myCanvas14" class="puertacerrada"></canvas>
       </div>
       <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-        <h2 class="titol" id="DadesPersonals" style="margin:0px;">Cel·les del sector X</h2>
+        <div id="numsector">
+        <h2 class="titol" id="DadesPersonals" style="margin:0px;">Cel·les del sector X</h2></div>
       </div>
       <div class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
-<canvas id="myCanvas15" class="canvass" style="border:1px solid #d3d3d3; width:50px;height:54px;background-color:grey;"></canvas>
+<canvas id="myCanvas15" class="puertacerrada"></canvas>
       </div>
     </div>
 
     <div class="row" style="padding-top:2%">
       <div class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
-<canvas id="myCanvas16" class="canvass" style="border:1px solid #d3d3d3; width:50px;height:54px;background-color:grey;"></canvas>
+<canvas id="myCanvas16" class="puertacerrada"></canvas>
       </div>
       <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+        <div id="dispositius">
+          ddddddddddddddddd
+        </div>
       </div>
       <div class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
-<canvas id="myCanvas17" class="canvass" style="border:1px solid #d3d3d3; width:50px;height:54px;background-color:grey;"></canvas>
+<canvas id="myCanvas17" class="puertaabierta"></canvas>
       </div>
     </div>
 
@@ -273,41 +247,41 @@
 
 <div class="row" style="padding-top:2%">
       <div class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
-<canvas id="myCanvas18" class="canvass" onclick="coloreate();" style="border:1px solid #d3d3d3; width:50px;height:54px;background-color:grey;"></canvas>
+<canvas id="myCanvas18" class="puertacerrada" onclick="color();"></canvas>
       </div>
 <div class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
-<canvas id="myCanvas19" class="canvass" style="border:1px solid #d3d3d3; width:50px;height:54px;background-color:grey;"></canvas>
+<canvas id="myCanvas19" class="puertaabierta"></canvas>
       </div>
       <div class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
-<canvas id="myCanvas20" class="canvass" style="border:1px solid #d3d3d3; width:50px;height:54px;background-color:grey;"></canvas>
+<canvas id="myCanvas20" class="puertaabierta"></canvas>
       </div>
       <div class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
-<canvas id="myCanvas21" class="canvass" style="border:1px solid #d3d3d3; width:50px;height:54px;background-color:grey;"></canvas>
+<canvas id="myCanvas21" class="puertaabierta"></canvas>
       </div>
       <div class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
-<canvas id="myCanvas22" class="canvass" style="border:1px solid #d3d3d3; width:50px;height:54px;background-color:grey;"></canvas>
+<canvas id="myCanvas22" class="puertacerrada"></canvas>
       </div>
       <div class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
-<canvas id="myCanvas23" class="canvass" style="border:1px solid #d3d3d3; width:50px;height:54px;background-color:grey;"></canvas>
+<canvas id="myCanvas23" class="puertaabierta"></canvas>
       </div>
       <div class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
-<canvas id="myCanvas24" class="canvass" style="border:1px solid #d3d3d3; width:50px;height:54px;background-color:grey;"></canvas>
+<canvas id="myCanvas24" class="puertacerrada"></canvas>
       </div>
       <div class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
-<canvas id="myCanvas25" class="canvass" style="border:1px solid #d3d3d3; width:50px;height:54px;background-color:grey;"></canvas>
+<canvas id="myCanvas25" class="puertacerrada"></canvas>
       </div>
       <div class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
-<canvas id="myCanvas26" class="canvass" style="border:1px solid #d3d3d3; width:50px;height:54px;background-color:grey;"></canvas>
+<canvas id="myCanvas26" class="puertacerrada"></canvas>
       </div>
       <div class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
-<canvas id="myCanvas27" class="canvass" style="border:1px solid #d3d3d3; width:50px;height:54px;background-color:grey;"></canvas>
+<canvas id="myCanvas27" class="puertacerrada"></canvas>
       </div>
       <div class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
-<canvas id="myCanvas28" class="canvass" style="border:1px solid #d3d3d3; width:50px;height:54px;background-color:grey;"></canvas>
+<canvas id="myCanvas28" class="puertacerrada"></canvas>
       </div>
       <div class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
         <div>
-<canvas id="myCanvas29" class="canvass" style="border:1px solid #d3d3d3; width:50px;height:54px;background-color:grey;"></canvas></div>
+<canvas id="myCanvas29" class="puertacerrada"></canvas></div>
       </div>
   	</div>
       </div>
@@ -337,9 +311,13 @@
     
   
   <script>
-
-    function color() {
-      obj = document.getElementById('myCanvas1');
+    function gestioceldas(titol,dades,ard,n){
+      t = document.getElementById(titol);
+      d = document.getElementById(dades);
+      a = document.getElementById(ard);
+    }
+    function color(x) {
+      obj = document.getElementById(x);
       obj.style.backgroundColor = '#FFFFFF';
     }
 
