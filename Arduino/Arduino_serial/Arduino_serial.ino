@@ -24,7 +24,6 @@ void setup() {
   // Start the Serial port to be used as a commandline
   Serial.begin(9600L);
   while (!Serial);
-
   // Start the cmdline to show the prompt and begin processing commands
   cmdline.begin(commands, sizeof(commands));
 }
@@ -38,11 +37,11 @@ void loop() {
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 void setOutputCmd(const char *arg) {
   if (strcmp(arg, "HIGH") == 0) {
-    digitalWrite(Q0_0, HIGH);
-    Serial.println("Q0.0 set to HIGH");
+    digitalWrite(Q0_5, HIGH);
+    Serial.println("Q0.5 set to HIGH");
   } else if (strcmp(arg, "LOW") == 0) {
-    digitalWrite(Q0_0, LOW);
-    Serial.println("Q0.0 set to LOW");
+    digitalWrite(Q0_5, LOW);
+    Serial.println("Q0.5 set to LOW");
   }
 }
 
