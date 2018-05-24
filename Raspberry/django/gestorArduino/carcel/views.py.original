@@ -1,0 +1,25 @@
+
+from django.views.decorators.csrf import csrf_exempt
+from django.shortcuts import render
+from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
+import urllib
+import urllib2
+import httplib
+import json
+
+
+@csrf_exempt
+def action(request):
+	if request.method=="POST":
+		print request.POST.get("sector")
+		return True
+	else:
+		print "x"
+                json_list={"x":{"y":{"z":"j"}}}
+                response=JsonResponse(json_list)
+                response['Access-Control-Allow-Origin'] = '*'
+
+                return response
+
+
+
