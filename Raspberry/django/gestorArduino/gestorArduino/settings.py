@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ["0.0.0.0", "localhost", "192.168.1.13" ]
 # Application definition
 
 INSTALLED_APPS = (
+    'carcel',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

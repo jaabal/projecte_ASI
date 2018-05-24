@@ -10,7 +10,7 @@ class Arduino(models.Model):
     celda=models.IntegerField(default=0)
     sector = models.IntegerField(default=0)
     def __str__(self):
-            return str(self.id)
+    	return str(self.id)
     class Meta:
         unique_together=(('celda','sector'),)
   
