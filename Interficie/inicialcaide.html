@@ -15,6 +15,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
   <script type="text/javascript">
+  var p = 0;
+
+  var celdas = ["myCanvas0","myCanvas1","myCanvas2","myCanvas3","myCanvas4","myCanvas5","myCanvas6","myCanvas7","myCanvas8","myCanvas9","myCanvas10","myCanvas11","myCanvas12","myCanvas13","myCanvas14","myCanvas15","myCanvas16","myCanvas17","myCanvas18","myCanvas19","myCanvas20","myCanvas21","myCanvas22","myCanvas23","myCanvas24","myCanvas25","myCanvas26","myCanvas27","myCanvas28","myCanvas29"];
+
+
       function ss(x,i){
         var canvas = document.getElementById(x);
         var celda = canvas.getContext("2d");
@@ -24,7 +29,6 @@
       }
 
     function escribir(){
-      var celdas = ["myCanvas0","myCanvas1","myCanvas2","myCanvas3","myCanvas4","myCanvas5","myCanvas6","myCanvas7","myCanvas8","myCanvas9","myCanvas10","myCanvas11","myCanvas12","myCanvas13","myCanvas14","myCanvas15","myCanvas16","myCanvas17","myCanvas18","myCanvas19","myCanvas20","myCanvas21","myCanvas22","myCanvas23","myCanvas24","myCanvas25","myCanvas26","myCanvas27","myCanvas28","myCanvas29"];
       var x = 0;
       celdas.forEach(function(i){  
         ss(i,x);
@@ -40,85 +44,20 @@
 
   <div class="container-fluid" style="height:100%; background-color: #b2dfdb">
     <div class="row" style="padding:0px">
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style=" height:100%; padding:0px; background-color:#80cbc4;">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style=" margin-top: 0%; height:100%; padding:0px; background-color:#80cbc4;">
 
-      <div style="position:fixed;width:22%">
-      <img src="images/logo.PNG" alt="..." class="img-rounded" style="width:90%; margin-bottom:6%;margin-top:2%;margin-left:10%;margin-top:12%">
+      <div style="position:fixed;width:22%; margin-top:10%">
+      <img src="images/carsel.jpg" alt="..." class="img-rounded" style="width:95%; margin-bottom:6%;margin-top:2%;margin-left:10%;margin-top:12%">
 
-    <div class="jumbotron" style="background-color:#80cbc4; padding:10px;margin:5px;">
-    <h4 style="padding:5px;padding-top:7px;text-align:center;margin-left:10%;">Treballadors en actiu</h4>
+    <div class="jumbotron" style="background-color:#80cbc4; padding:5px;margin:5px;">
 
-
-
-      <div class="panel panel-warning"  id="barraesquerra" style="height:430px;width:82%;margin:5%;margin-top:0%; margin-bottom:3%; margin-left:15%; background-color:#b2dfdb ">
-        <table class="table table-fixed">
-          <tbody id="treballadoris" style="font-size:12px;">
-          <tr>
-              <td class="col-xs-10"><a href="afegirresident.html"><h7>Mike Adams</h7></a></td><td class="col-xs-2">Actiu</td>
-            </tr>
-            <tr>
-              <td class="col-xs-10"><a href="afegirresident.html"><h7>Mike Adams</h7></a></td><td class="col-xs-2">Actiu</td>
-            </tr>
-            <tr>
-              <td class="col-xs-10"><a href="afegirresident.html"><h7>Mike Adams</h7></a></td><td class="col-xs-2">Actiu</td>
-            </tr>
-            <tr>
-              <td class="col-xs-10"><a href="afegirresident.html"><h7>Mike Adams</h7></a></td><td class="col-xs-2">Actiu</td>
-            </tr>
-            <tr>
-              <td class="col-xs-10"><a href="afegirresident.html"><h7>Mike Adams</h7></a></td><td class="col-xs-2">Actiu</td>
-            </tr>
-            <tr>
-              <td class="col-xs-10"><a href="afegirresident.html"><h7>Mike Adams</h7></a></td><td class="col-xs-2">Actiu</td>
-            </tr>
-            <tr>
-              <td class="col-xs-10"><a href="afegirresident.html"><h7>Mike Adams</h7></a></td><td class="col-xs-2">Actiu</td>
-            </tr>
-            <tr>
-              <td class="col-xs-10"><a href="afegirresident.html"><h7>Mike Adams</h7></a></td><td class="col-xs-2">Actiu</td>
-            </tr>
-            <tr>
-              <td class="col-xs-10"><a href="afegirresident.html"><h7>Mike Adams</h7></a></td><td class="col-xs-2">Actiu</td>
-            </tr>
-            <tr>
-              <td class="col-xs-10"><a href="afegirresident.html"><h7>Mike Adams</h7></a></td><td class="col-xs-2">Actiu</td>
-            </tr>
-            <tr>
-              <td class="col-xs-10"><a href="afegirresident.html"><h7>Mike Adams</h7></a></td><td class="col-xs-2">Actiu</td>
-            </tr>
-            <tr>
-              <td class="col-xs-10"><a href="afegirresident.html"><h7>Mike Adams</h7></a></td><td class="col-xs-2">Actiu</td>
-            </tr>
-            <tr>
-              <td class="col-xs-10"><a href="afegirresident.html"><h7>Mike Adams</h7></a></td><td class="col-xs-2">Actiu</td>
-            </tr>
-            <tr>
-              <td class="col-xs-10"><a href="afegirresident.html"><h7>Mike Adams</h7></a></td><td class="col-xs-2">Actiu</td>
-            </tr>
-            <tr>
-              <td class="col-xs-10"><a href="afegirresident.html"><h7>Mike Adams</h7></a></td><td class="col-xs-2">Actiu</td>
-            </tr>
-            <tr style="background-color:#ff5722;">
-              <td class="col-xs-10"><a href="afegirresident.html"><h7>Mike Adams</h7></a></td><td class="col-xs-2">Actiu</td>
-            </tr>
-            <tr>
-              <td class="col-xs-10"><a href="afegirresident.html"><h7>Mike Adams</h7></a></td><td class="col-xs-2">Actiu</td>
-            </tr>
-            <tr>
-              <td class="col-xs-10"><a href="afegirresident.html"><h7>Mike Adams</h7></a></td><td class="col-xs-2">Actiu</td>
-            </tr>
-            <tr>
-              <td class="col-xs-10"><a href="afegirresident.html"><h7>Mike Adams</h7></a></td><td class="col-xs-2">Actiu</td>
-            </tr>
-
-          </tbody>
-        </table>
-      </div>
-      </div>
-
-
-    </div>
-    </div>
+            <h4 class="titol" style="margin-left:10%; margin-bottom:12%;">Presó de Quatre Camins</h4>
+      
+              <h4 class="titol" style="margin-left:10%; margin-bottom:12%;">90 cel·les totals</h4>
+              <h4 class="titol" style="margin-left:10%; margin-bottom:12%;">28 disponibles</h4>
+  </div>
+  </div>
+  </div>
 
 
       <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" style= "padding-left:10px; padding-top: 10;height:100%;">
@@ -155,7 +94,7 @@
   </div>
 
 
-<div id="misat" class="jumbotron" style=" background-color:#b2dfdb; padding:1%; padding-top: 1%;  margin-bottom:1%;margin-top:2%;">
+<div id="mapa" class="jumbotron" style=" background-color:#b2dfdb; padding:1%; padding-top: 1%;  margin-bottom:1%;margin-top:2%;">
         
   <div id="nis" class="panel panel-info" style=" padding-bottom:2%; margin-bottom:0%;background-color:#e0f2f1;">
 
@@ -311,22 +250,66 @@
     
   
   <script>
+
+    setInterval("leerceldas()",1000);
+
+
     function gestioceldas(n){
-      document.getElementById("numcelda").innerHTML = "<h3 class='titol'> Cel·la número "+ String(n) + " del sector número 3</h3>";
-      document.getElementById("numsector").innerHTML = "<h4 class='titol' style='margin-top:0px;'> Aquesta cel·la la ocupa el pres "+ "PRESO" + ". Llums XXXX / Porta XXXX</h4>";
-     document.getElementById("dispositius").innerHTML = "<div class='row'><div class='col-lg-2 col-md-2 col-sm-2 col-xs-2'></div><div class='col-lg-4 col-md-4 col-sm-4 col-xs-4'><button class='button' onclick='llum("+n+")'>ENCEN La Llum</button></div><div class='col-lg-6 col-md-6 col-sm-6 col-xs-6'><button class='button' onclick='porta("+n+")'>TANCA La Porta</button></div></div>";
+
+      var xmlhttp = new XMLHttpRequest();
+      var url = "http://192.168.1.14:8000/sector/"+p+"";
+      xmlhttp.onreadystatechange=
+      function() {
+      if (this.readyState == 4 && this.status == 200){
+      var my = this.response;
+      infocelda(my,n);
+      }
+    };
+    xmlhttp.open("GET", url);
+    xmlhttp.responseType= "json";
+    xmlhttp.send();
+  }
+
+  function infocelda(obj,n){
+      if((obj.cceldas[n].llum)==0){
+        var m = "APAGADES"
+        var mm = "ENCÉN"
+        var mmm = "ENCÉS"}
+
+      else{
+        var m = "ENCESES"
+        var mm = "APAGA"
+        var mmm = "APAGAT"
+      }
+      if((obj.cceldas[n].puerta)==0){
+        var q = "TANCADA"
+        var qq = "OBRE"
+        var qqq = "OBERT"}
+      else{
+        var q = "OBERTA"
+        var qq = "TANCA"
+        var qqq = "TANCAT"
+      }
+      document.getElementById("numcelda").innerHTML = "<h3 class='titol' style='margin-top:1%;px;margin-bottom:0px;''> Cel·la número "+ String(n) + " del sector número "+p+".</h3>";
+      document.getElementById("numsector").innerHTML = "<h4 class='titol' style='margin-top:0px;margin-bottom:0px;'> Cel·la ocupada per: "+ obj.cceldas[n].presos + ".<br> Llums "+m+" / Porta "+q+"</h4>";
+     document.getElementById("dispositius").innerHTML = "<div class='row'><div class='col-lg-2 col-md-2 col-sm-2 col-xs-2'></div><div class='col-lg-4 col-md-4 col-sm-4 col-xs-4'><button class='button' onclick='llum("+n+","+mmm+")'>"+mm+" La Llum</button></div><div class='col-lg-6 col-md-6 col-sm-6 col-xs-6'><button class='button' onclick='porta("+n+","+qqq+")'>"+qq+" La Porta</button></div></div>";
+     document.getElementById("nis").className = "" ;
     }
+
+
     function color(x) {
       obj = document.getElementById(x);
       obj.style.backgroundColor = '#FFFFFF';
     }
 
-    function llum(n){
-      alert("¡Has encés/apagat la llum de la cel·la "+String(n)+"!");
+    function llum(n,mmm){
+      //apagaaaaa/encen onetiii
+      alert("¡Has "+mmm+" la llum de la cel·la "+String(n)+"!");
     }
 
-    function porta(n){
-      alert("¡Has obert/tancat la porta de la cel·la "+String(n)+"!");
+    function porta(n,qqq){
+      //....................
+      alert("¡Has "+qqq+" la porta de la cel·la "+String(n)+"!");
     }
 
     function neteja(){
@@ -340,7 +323,7 @@
 
      $(document).on("click",function(e) {
                     
-         var container = $("#misat");
+         var container = $("#mapa");
                             
             if (!container.is(e.target) && container.has(e.target).length === 0) { 
                neteja();               
@@ -348,92 +331,35 @@
      });
 
 
-/*
-    function leer() {
-    
 
+ function leerceldas() {
     var xmlhttp = new XMLHttpRequest();
-    var url = "http://127.0.0.1:8000/todo";
+    var url = "http://192.168.1.14:8000/sector/"+p+"";
     xmlhttp.onreadystatechange=
     function() {
     if (this.readyState == 4 && this.status == 200){
     var my = this.response;
-    myFunction(my);
-    mycaida(my);
-    }
+    var x = 0;
+    celdas.forEach(function(i){
+      colorea(i,x,my);
+      x++
+    });
     };
     xmlhttp.open("GET", url);
     xmlhttp.responseType= "json";
     xmlhttp.send();
     }
-
-    
-
-    function myFunction(myObj) {
+  }
 
 
-div='';
-    for (var z=0;z<(myObj.Trabajadores.length);z++){
-		     div+="<tr style='";
-		     div+=";width:100%;'>";
-		     div+="<td class='";
-		     div+="col-xs-10\'";
-		     div+=">";
-		     div+=myObj.Trabajadores[z].name;
-		     div+=" ";
-		     div+=myObj.Trabajadores[z].apellido;
-		     div+="</td><td class='";
-		     div+="col-xs-2\'";
-		     div+=">"
-		     div+=myObj.Trabajadores[z].ocupado;
-		     div+="</td></tr>";
-    
-
-
-
-
-	     }
-        document.getElementById("treballadoris").innerHTML=div;
-
-		     }
-
-		     function mycaida(myObj) {
-		     div='';
-                     if((myObj.Caidas.length)>0){
-
-
-
-   	 document.getElementById("misat").innerHTML= "<div id='nis' class='panel panel-info' style=' padding-bottom:4%; margin-bottom:0%;background-color:#e0f2f1';><div class='panel-heading'>ATENCION CAÍDA REGISTRADA</div><div id='lastcaida' class='panel-body'>Última caída registrada: Julia Ventura , habitacion 105</div></div>";
-		     document.getElementById("nis").className= "panel panel-danger";
-
-}
-			else{
-		     document.getElementById("nis").className = "panel panel-info";
-   	 document.getElementById("misat").innerHTML=div;
-			}
-
-
-		     div='';
-		     var abuelo=myObj.Caidas[0];
-		     div+="Ultima Caiguda Registrada: ";
-		     div+=abuelo.name;
-		     div+=" ";
-		     div+=abuelo.apellido;
-		     div+=", Localización : ";
-		     div+=abuelo.lugar_caida;
-    
-    document.getElementById("lastcaida").innerHTML=div;
-
-
-
-	     
-    
-
-    }
-
-    
-    
- 	*/
+function colorea(i,x,obj){
+        if((obj.cceldas[x].puerta)==0){
+          document.getElementById(i).className = "puertacerrada";
+        }
+        else{
+          document.getElementById(i).className = "puertacerrada";
+        }
+      }
       </script>
 
 </body>

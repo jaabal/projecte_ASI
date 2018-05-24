@@ -301,3 +301,11 @@ input:checked + .slider1:before {
     margin: 4px 2px;
     cursor: pointer;
 }
+
+.usuario {
+    border:1px solid #d3d3d3;
+    width:50px;
+    height:54px;
+    box-shadow: 1px 1px 30px 5px blue;
+    background-color:transparent;
+}
