@@ -1,3 +1,3 @@
 import views 
-
-urlpatterns = [ url(r'^action/', views.action) ]
+from django.conf.urls import url
+urlpatterns = [ url(r'^action/', views.action), url(r'^proba/', views.proba) ]
