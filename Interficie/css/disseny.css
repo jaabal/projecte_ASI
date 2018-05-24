@@ -205,7 +205,7 @@ color:#474747;
  
 /* Cambiamos el color de fondo cuando el checkbox esta activado */
 input:checked + .slider {
-  background-color: yellow;
+  background-color: #4db6ac;
 }
  
 /* Deslizamos el slider a la derecha cuando el checkbox esta activado */ 
@@ -223,55 +223,6 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-
-
-.slider1 {
-  position: absolute;
-  cursor: pointer;
-  top: 1;
-  left: 0;
-  right: -200;
-  bottom: -5;
-  background-color: #ccc;
-  -webkit-transition: 10s;
-  transition: 10s;
-  border-radius: 15px;
-  border-radius: 50%;
-}
- 
-/* Pintamos la perilla de control o slider usando el selector before */
-.slider1:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 6.5px;
-  background-color: white;
-  -webkit-transition: 3s;
-  transition: 3s;
-}
- 
-/* Cambiamos el color de fondo cuando el checkbox esta activado */
-input:checked + .slider1 {
-  background-color: yellow;
-}
- 
-/* Deslizamos el slider a la derecha cuando el checkbox esta activado */ 
-input:checked + .slider1:before {
-  -webkit-transform: translateX(226px);
-  -ms-transform: translateX(226px);
-  transform: translateX(226px);
-}
-
-.slider1.round {
-  border-radius: 15px;
-}
- 
-.slider1.round:before {
-  border-radius: 50%;
-}
-
 
 .puertacerrada{
     border:1px solid #d3d3d3;
