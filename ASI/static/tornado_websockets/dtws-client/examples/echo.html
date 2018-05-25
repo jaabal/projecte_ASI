@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Echo</title>
+    <style>
+        .hide {
+            display: none
+        }
+    </style>
+</head>
+<body>
+
+<h2>
+    Status: <span id="status">Connecting...</span>
+</h2>
+
+<form id="form" class="hide">
+    <p>Send a message to my Django Tornado WebSocket</p>
+
+    <input type="text" name="message" autocomplete="off">
+    <button type="submit">Send</button>
+
+    <p>
+        Server said: <b id="response">...</b>
+    </p>
+</form>
+
+<script src="js/require.js" data-main="js/main"></script>
+</body>
+</html>

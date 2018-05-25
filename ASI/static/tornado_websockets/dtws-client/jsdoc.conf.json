@@ -1,0 +1,28 @@
+{
+  "source": {
+    "include": [
+      "package.json",
+      "README.md",
+      "dist/tornadowebsocket-es6.js",
+      "dist/modules/progress_bar-es6.js"
+    ]
+  },
+  "plugins": [
+    "plugins/markdown"
+  ],
+  "templates": {
+    "applicationName": "Dtws-client",
+    "cleverLinks": false,
+    "monospaceLinks": false,
+    "default": {
+      "layoutFile": "./.jsdoc/tmpl/layout.tmpl",
+      "useLongnameInNav": true,
+      "outputSourceFiles": false
+    }
+  },
+  "opts": {
+    "destination": "./doc/",
+    "encoding": "utf8",
+    "private": true
+  }
+}
