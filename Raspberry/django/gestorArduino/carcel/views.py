@@ -29,7 +29,7 @@ def action(request):
     ser.open()
     
     time.sleep(1)
- 
+
     zone = str(request.POST.get("nsector"))
     cell = str(request.POST.get("ncelda"))
     abrir = str(request.POST.get("nabrir"))
@@ -39,9 +39,6 @@ def action(request):
     print
     print " Missatge rebut pel servidor web: " + str(request.POST) 
     print " Missatge filtrat: Sector: "+ zone +" / abrir " + abrir + " / celda: "+ cell +" / gadget: "+ gadget
-    print
-    print 
-
     #Funcio per a buscar a quin arduino se li vol fer X accio
     #arduino = Arduino.objects.filter(sector=zone)
     #for element in arduino:
@@ -90,7 +87,7 @@ def action(request):
 @csrf_exempt
 def proba(request):
     url = 'http://0.0.0.0:8000/action/'
-    values = {'ncelda' : '2', 'nsector' : '1','ngadget' : '0', 'nabrir' : '1' }
+    values = {'ncelda' : '2', 'nsector' : '1','ngadget' : '0', 'nabrir' : '0' }
     data = urllib.urlencode(values)
     req = urllib2.Request(url, str(data))
     response = urllib2.urlopen(req)
