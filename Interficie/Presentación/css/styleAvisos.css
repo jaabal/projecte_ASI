@@ -93,7 +93,7 @@ h2{
 }
 
 #segunda{
-	background: url(../images/fondo.jpg) 50% 0 no-repeat fixed;
+	background: url(../images/fondo.jpg) 50% 0 no-repeat absolute;
 	color: black;
 	height: 850px;
 	margin: 0 auto;
@@ -128,11 +128,12 @@ h2{
 	box-shadow: 0px -13px 19px 0px #80cbc4;
 }
 
+
 #tercera{
-	background: url(../images/presenta1.jpg) 50% 0 no-repeat fixed;
+	background: url(../images/presenta1.png) 50% 0 no-repeat fixed;
 	background-size:55%;
 	color: black;
-	height: 850px;
+	height: 800px;
 	padding: 0 0 0 0;
 }
 #tercera .jumbotron{
@@ -145,37 +146,10 @@ h2{
 	box-shadow: 0px -13px 19px 0px #80cbc4;
 }
 
-#cuarta{
-	background: url(../images/plano.png) 50% 0 no-repeat fixed;
-	background-size:40%;
-	color: black;
-	height: 850px;
-	margin: 0 auto;
-	overflow: hidden;
-	padding: 0;
-
-}
-
-#cuarta .jumbotron{
-	height:100%;
-	width:500px;
-	float:right;
-	padding:20px;
-	margin:50px;
-	color:black;
-	margin-top:250px;
-	border-bottom-right-radius: 20px;
-	border-bottom-left-radius:5px;
-	border-top-right-radius: 20px;
-	border-top-left-radius:5px;
-	z-index:20;
-	background-color:#b2dfdb;
-	box-shadow: 0px 0px 20px 5px #b2dfdb;
-}
-
 #quinta{
-	background: url(../images/gestiodades.jpg) 50% 0 no-repeat fixed;
-	background-size: 45%;
+	background: url(../images/quinta2.png) 50% 0 no-repeat fixed;
+	background-position:0px 200px;
+	background-size: 55%;
 	color: black;
 	height: 850px;
 	padding: 0 0 0 0;
@@ -191,9 +165,28 @@ h2{
 	box-shadow: 0px -13px 19px 0px #80cbc4;
 }
 
+#quinta2{
+	background: url(../images/1.png) 50% 0 no-repeat fixed;
+	background-position:0px 200px;
+	background-size: 55%;
+	color: black;
+	height: 850px;
+	padding: 0 0 0 0;
+
+}
+#quinta2 .jumbotron{
+	background-color:#b2dfdb;
+	height:850px;
+	width:400px;
+	padding:30px;
+	float:top;
+	color:black;
+	box-shadow: 0px -13px 19px 0px #80cbc4;
+}
+
 
 #sexta{
-	background: url(../images/sexta.jpg) 50% 0 no-repeat fixed;
+	background: url(../images/2.png) 50% 0 no-repeat fixed;
 	color: black;
 	height: 850px;
 	margin: 0 auto;
@@ -219,7 +212,7 @@ h2{
 
 
 #septima{
-	background: url(../images/septima.jpg) 50% 0 no-repeat fixed;
+	background: url(../images/3.png) 50% 0 no-repeat fixed;
 	background-size: 90%;
 	color: black;
 	height: 850px;
@@ -227,6 +220,24 @@ h2{
 	box-shadow: 0px -13px 19px 0px #80cbc4;
 }
 #septima .jumbotron{
+	background-color:gray;
+	height:850px;
+	width:400px;
+	padding:30px;
+	float:top;
+	color:black;
+}
+
+#octava{
+	background: url(../images/4.png) 50% 0 no-repeat fixed;
+	background-size: 100%;
+	color: black;
+	margin-left:0%;
+	height: 850px;
+	padding: 0 0 0 0;
+	box-shadow: 0px -13px 19px 0px #80cbc4;
+}
+#octava .jumbotron{
 	background-color:gray;
 	height:850px;
 	width:400px;

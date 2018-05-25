@@ -21,10 +21,11 @@ $(document).ready(function(){
 	$('#segunda').parallax("70%", 0.8);
 	$('.bg').parallax("5%", 0.3);
 	$('#tercera').parallax("90%", 0.5);
-	$('#cuarta').parallax("7%", 0.3);
 	$('#quinta').parallax("80%", 0.4);
+	$('#quinta2').parallax("80%", 0.4);
 	$('#sexta').parallax("130px", 0);
 	$('#septima').parallax("50%%", 0);
+	$('#octava').parallax("0%", 0.1);
 	$('#novena').parallax("0%", 0.6);
 	$('#alarma').parallax("0%", -1);
 	$('#decima').parallax("50%", 0.3);
@@ -80,51 +81,35 @@ $(document).ready(function(){
 		<div class="story">
 	    	<div class="jumbotron">
 	           <br>
-	            <h2>Configuració Arduinos</h2> <br><br>
-	            <h3>Transmissió de dades</h3>
-	            <p>&nbsp;&nbsp;&nbsp;Nodes de la xarxa<br>
-	            &nbsp;&nbsp;&nbsp;Escaneig<br>
-	            &nbsp;&nbsp;&nbsp;Peticions de potència<br> 
-	            &nbsp;&nbsp;&nbsp;Transmissió del frame
-					</p><br>
-				<h3>Recepció de dades</h3>
-	            <p>&nbsp;&nbsp;&nbsp;Recepció del frame<br>
-	            &nbsp;&nbsp;&nbsp;Traducció del frame<br>
-	            &nbsp;&nbsp;&nbsp;Selecció de dades<br> &nbsp;&nbsp;&nbsp;Comunicació API
-</p>
-
+	            <h2>Configuració Arduinos</h2> <br><br><br>
+	            <h3>Comunicació Serial</h3>
+	            <br><br><br><br>
+				<h3>Màquina d'estats simple</h3>
+	           
 	        </div>
 	    </div> <!--.story-->
 	</div> <!--#third-->
-
-	<div id="cuarta">
-		<div class="story"><div class="bg"></div>
-	    	<div class="jumbotron">
-	            <br>
-	            <h2>Servidor web</h2>
-	            <br>
-	            <br>
-	            <h3>"Triangulació"</h3>
-	            <p>&nbsp;&nbsp;&nbsp;Simplicitat / 1 potència<br>
-	            &nbsp;&nbsp;&nbsp;Nord-Sud<br>
-
-
-
-</p>	            	            
-	        </div>
-	    </div> <!--.story-->
-	    
-	</div> <!--#second-->
 	
 	<div id="quinta">
 		<div class="story">
 	    	<div class="jumbotron">
-	           <br><br><br><h2>Tractament de dades i gestió</h2> <br><br>
-	            <br><p>&nbsp;&nbsp;&nbsp;Base de dades</p>
+	           <br><br><br><h2>Gestor Arduinos</h2> <br><br>
+	            <br><h3>&nbsp;&nbsp;&nbsp;Recepció servidor web</h3>
 	            <br><br><br>
-	            <p>&nbsp;&nbsp;&nbsp;Tractament de dades rebudes</p>
+	            <p>&nbsp;&nbsp;&nbsp;POST request</p>
 	            <br><br><br>
-	            <p>&nbsp;&nbsp;&nbsp;Comunicació servidor-coordinador</p>
+	        </div>
+	    </div> <!--.story-->
+	</div> <!--#third-->
+
+	<div id="quinta2">
+		<div class="story">
+	    	<div class="jumbotron">
+	           <br><br><br><h2>Gestor Web</h2> <br><br>
+	            <br><h3>&nbsp;&nbsp;&nbsp;Gestor de dades</h3>
+	            <br><br><br>
+	            <p>&nbsp;&nbsp;&nbsp;POST request</p>
+	            <br><br><br>
 	        </div>
 	    </div> <!--.story-->
 	</div> <!--#third-->
@@ -138,6 +123,11 @@ $(document).ready(function(){
 	
 	<div id="septima">
 		<div class="story">
+	    </div> <!--.story-->
+	</div> <!--#third-->
+	<div id="octava" style="">
+		<div class="story">
+	    
 	    </div> <!--.story-->
 	</div> <!--#third-->
 	
@@ -181,11 +171,14 @@ $(document).ready(function(){
 	
 	<div id="final">
 		<div class="story" style="color:black";>
-		    <p><br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Projecte realitzat per Eloi Dàvila, David Onetti, Marc Ferrer i Joan Froufe.<br>
-		    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Integració de sistemes, Q7 2018</p>
+		    <p><br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Projecte realitzat per Eloi Dàvila, David Onetti, Alex Jabalquinto i Joan Froufe.<br>
+		    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aplicacions i Serveis a Internet, 2018</p>
 	        <br><br><br>
 	        <h2>Interficie gràfica: 
-	        <a href=IPPP target="_blank">   PreSOS</a>
+	        <a href="http://192.168.43.57:8000/accounts/login/">PreSOS</a>
+	        </h2>
+	         <h2>Github del projecte: 
+	        <a href="https://github.com/jaabal/projecte_ASI">PreSOS</a>
 	        </h2>
 	    </div> <!--.story-->
 	</div> <!--#fifth-->
